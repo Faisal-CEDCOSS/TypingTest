@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Typing Test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <script src="main.js"></script> 
+</head>
+<body style="background-image: linear-gradient(to bottom, #815023, #673825, #482521, #281618, #000000); overflow:hidden;">
+<div class="logo">
+	<img src="./logo.jpg" id="image">
+</div>
+<div class="text_input">
+  <p id="testString">This is a typing test. Your goal is to duplicate THIS ENTIRE provided text, EXACTLY, in the field below. The timer starts when you click the BUTTON, and only stops when you are DONE with exactly. Good Luck!</p>
+  <div  style="border-bottom: 1px solid #fd7100;"></div>
+  <div id="typeBelow"><p>Type in the box below :</p></div>
+  <textarea rows="5" cols="70" id="inputText" onPaste="return false" placeholder="Start typing your text here..."></textarea>
+  <p id="timer">0 s</p><button type="button" id="button" onclick="buttonClick()" value="Start Over">Start Over</button>
+<div id="displayResult">
+  <p id="displaySpeed"></p>
+</div>
+</div>
+</body>
+</html>
